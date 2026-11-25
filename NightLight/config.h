@@ -21,6 +21,7 @@ const int SENSOR_SAMPLES = 8;  // number of readings to average for light sensor
 
 // ---------- LED settings (Task 2, Developer B) ----------
 // TODO Task 2: add any settings you need here (for example: const int FADE_STEP = 5;)
+const int FADE_STEP = 5;
 
 // ---------- Button settings (Task 3, Developer C) ----------
 // TODO Task 3: add any settings you need here (for example: const unsigned long BUTTON_DEBOUNCE_MS = 40;)
