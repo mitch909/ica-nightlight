@@ -26,7 +26,9 @@ void logStatus(int light) {
   Serial.print(" light=");
   Serial.print(light);
   Serial.print(" led=");
-  Serial.println(ledBrightness);
+  Serial.print(ledBrightness);
+  Serial.print(" room=");
+  Serial.println(lightLabel(light));
 }
 
 // TODO Task 6 (Developer B): add logBanner() below this line.
