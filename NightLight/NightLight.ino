@@ -25,9 +25,17 @@ void handleButton() {
   }
 }
 
+
+/**
+ * Automatically turn on light when it is dark, and turn off when it is light.
+ * @param light The measured ambient light level (0-1023)
+ */
 void applyAuto(int light) {
-  // TODO Task 5 (Developer A): turn the LED on when it is dark.
-  fadeTowards(0);
+  if(light < DARK_THRESHOLD) {  // If room is dark
+    fadeTowards(NIGHT_BRIGHTNESS);
+  } else {
+    fadeTowards(0);
+  }
 }
 
 void applyMode(int light) {
