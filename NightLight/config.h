@@ -17,7 +17,7 @@ const int LIGHT_SENSOR_PIN = A0;
 enum Mode { MODE_OFF, MODE_AUTO, MODE_ON };
 
 // ---------- Light sensor settings (Task 1, Developer A) ----------
-// TODO Task 1: add any settings you need here (for example: const int SENSOR_SAMPLES = 8;)
+const int SENSOR_SAMPLES = 8;  // number of readings to average for light sensor
 
 // ---------- LED settings (Task 2, Developer B) ----------
 // TODO Task 2: add any settings you need here (for example: const int FADE_STEP = 5;)
